@@ -1,0 +1,103 @@
+@import 'https://fonts.flipdish.com/Alike.css';
+
+html, body {
+	color: #333;
+	font: 16px/1.21 Alike, sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.stats {
+	margin-bottom: 20px;
+	margin-top: 0;
+	padding: 10px;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		padding-right: 16px;
+	}
+}
+
+.list {
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+}
+
+.fontOption {
+	box-sizing: border-box;
+	position: relative;
+
+	button {
+		align-items: center;
+		background: white;
+		border: 1px solid #666;
+		border-radius: 2px;
+		color: #000000;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		font-family: monopsace;
+		font-size: 16px;
+		margin-bottom: 10px;
+		padding: 16px;
+		position: relative;
+		text-align: left;
+		width: 100%;
+
+		h2, p {
+			margin: 0;
+		}
+		h2 {
+			margin-bottom: 8px;
+		}
+		.plainName {
+			color: #000;
+			font-family: monospace !important;
+			font-size: 12px;
+			position: absolute;
+			right: 8px;
+			top: 8px;
+		}
+
+		&:hover {
+			box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+			cursor: pointer;				
+		}
+	}
+}
+
+.search {
+	background-color: #FFF;
+	border-bottom: 1px solid #222;
+	
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.searchBox {
+	align-items: center;
+	display: flex;
+	margin: 0 10px 10px;
+	padding-top: 10px;
+
+	input {
+		border: 1px solid #666;
+		border-radius: 2px;
+		font-family: monospace;
+		font-size: 16px;
+		padding: 4px;
+		margin-left: 8px;
+		width: 100%;
+	}
+}
